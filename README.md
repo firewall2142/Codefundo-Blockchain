@@ -1,5 +1,5 @@
-Complete guide to Conducting Elections using Azure
-=====================================================
+Complete guide to Conducting Elections using Azure Blockchain
+=============================================================
 
 Our model of a blockchain election satisfies the following:
 
