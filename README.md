@@ -38,13 +38,15 @@ Technical Details
 -----------------
 
 
-In our idea for election, every vote is a transaction from the ethereum account of the voter (created automatically when applying for voter ID) to the election contract. The transaction's data field specifies the candidate voted for, this is encrypted using RSA and the key(1) is with EC. The transaction is signed by both the voter and the EVM using their private keys (ECDSA algorithm).
-The mnemonic+hash(votername) is used as seed to generate private key.
+In our idea for election, every vote is a transaction from the ethereum account of the voter (created automatically when applying for voter ID) to the election contract. The transaction's data field specifies the candidate voted for, this is salted and encrypted using RSA and the key(1) is with EC. The transaction is signed by both the voter and the EVM using their private keys (ECDSA algorithm).
 
-The EVM's code is permanently "burned" into the EVM so that it cannot be changed
+The mnemonic+hash(voter's name) is used as seed to generate private key of the voter.
+
+The EVM's code is permanently "burned" into the EVM so that it cannot be changed.
+
 EVM's private keys are encrypted using RSA and the "password" is communicated just before opening of polling booth.
 
-The EC, will run a program which reads the database and the transactions with the contract, and will monitor the election for things like double voting, people going to the wrong booth etc. in real time.
+The EC, will run a program which reads the database and the transactions with the contract, and will monitor the election for things like double voting, people voting from the wrong booth etc. in real time.
 
 When the voting process is over, the EC will run another program to count the votes which uses key(1) for decryption
 
@@ -55,4 +57,5 @@ Pros of our idea
 * High Security: Creating a fake vote requires access to many levels
 * VoterID can be applied for online
 * You have the freedom to choose any polling booth
-* 
+* No one can see whom you voted
+* EVMs are flexible. For extremely remote regions, the person can register for voter ID online. EVM can be a mobile app, whose private key is communicated, instead of taking the whole EVM to the remote place.
