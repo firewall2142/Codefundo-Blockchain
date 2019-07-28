@@ -116,3 +116,5 @@ Pros of our idea
 * Real-time monitoring of election
 * High Security: Creating a fake vote requires access to many levels
 * You have the freedom to choose any polling booth
+
+![Flow Diagram](codefundo-min.png)
