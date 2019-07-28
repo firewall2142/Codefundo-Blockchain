@@ -38,7 +38,7 @@ Technical Details
 -----------------
 
 
-In our idea for election, every vote is a transaction from the ethereum wallet of the voter (created automatically when applying for voter ID) to the election contract. The transaction's data field specifies the candidate voted for, this is salted and encrypted using RSA and the key(1) is with EC. The transaction is signed by both the voter and the EVM using their private keys (ECDSA algorithm).
+In our idea for election, every vote is a transaction from the ethereum wallet of the voter (created automatically when applying for voter ID) to the election contract. The transaction's data field specifies the candidate voted for, this is salted and encrypted using RSA and the key(1)(private key used to decrypt RSA)  is with EC. The transaction is signed by both the voter and the EVM using their private keys (ECDSA algorithm).
 
 The mnemonic+hash(voter's name) is used as a seed to generate a private key of the voter.
 
