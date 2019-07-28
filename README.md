@@ -5,14 +5,14 @@ Our model of a blockchain election satisfies the following:
 
 * Its easy to check if particular person has voted
 * Impossible to say that a person voted for a particular candidate
-* Only the Election Commissioner can tell which person voted for which candidate
+* Only Election Commissioner can tell which person voted for which candidate
 
 Voter's Perspective
 -------------------
 
-1. The voter has to apply online for voterID with aadhaar card and specify the polling booth for casting vote.
-2. The voter will receive a mnemonic of 10 words.
-3. On the day of election, the voter will have to go to his/her polling booth, get their fingerprint/iris scan verified and enter their mnemonic to vote.
+1. Voter has to apply online for voterID with aadhaar card and specify the polling booth for casting vote.
+2. Voter will receive a mnemonic of 10 words.
+3. On the day of election, voters will have to go to their polling booth, get fingerprint/iris scan verified and enter the mnemonic to vote.
 
 Election Commision's Perspective
 --------------------------------
