@@ -53,9 +53,7 @@ When the voting process is over, the EC will run another program to count the vo
 Pros of our idea
 ----------------
 
+* EVMs are flexible. For extremely remote regions, the person can register for voter ID online. EVM can be a mobile app, whose private key is communicated, instead of taking the whole EVM to the remote place.
 * Real time monitoring of election
 * High Security: Creating a fake vote requires access to many levels
-* VoterID can be applied for online
 * You have the freedom to choose any polling booth
-* No one can see whom you voted
-* EVMs are flexible. For extremely remote regions, the person can register for voter ID online. EVM can be a mobile app, whose private key is communicated, instead of taking the whole EVM to the remote place.
