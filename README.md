@@ -42,7 +42,7 @@ In our idea for election, every vote is a transaction from the ethereum wallet o
 
 The mnemonic+hash(voter's name) is used as a seed to generate a private key of the voter.
 
-The EVM's code is permanently "burned" into the EVM, so it cannot be changed.
+The EVM's code is permanently "burned" into the EVM.
 
 EVM's private keys are encrypted using RSA and the "password" is communicated just before the opening of booth.
 
@@ -53,7 +53,7 @@ When the voting process is over, the EC will run another program to count the vo
 Pros of our idea
 ----------------
 
-* EVMs are flexible. For extremely remote regions, the person can register for voter ID online. EVM can be a mobile app, whose private key is communicated, instead of taking the whole EVM to the remote place.
+* In regions without internet, the voter will get an app(which simulates a EVM) during voterID registration. The decryption key is sent in a letter to the voter. Then the voter will enter decryption key, his mnemonic, name, candidate in the app. The app generates a transaction which is copied to a postcard & mailed back to EC. 
 * Real-time monitoring of election
 * High Security: Creating a fake vote requires access to many levels
 * You have the freedom to choose any booth
